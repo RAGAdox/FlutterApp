@@ -15,23 +15,34 @@ class Home extends StatelessWidget{
         backgroundColor: Colors.red[600],
       ),
       body:Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Text('Trying Things OUt'),
-          FlatButton(
-              onPressed: ()
-              {
-                print('lets press harder');
-                },
-              color: Colors.amber,
-              child: Text('Try pressing')
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text('Hii RAGAdox'),
+              Text('Still figuring out'),
+              Text('Ok Thats Done')
+            ],
           ),
           Container(
+            padding: EdgeInsets.all(20.0),
             color: Colors.cyanAccent,
-            padding: EdgeInsets.all(30.0),
-            child: Text('Hey lets play '),
-          )
+            child: Center(
+                child:Text('Hey you \nStanding in the dark')),
+
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.pinkAccent,
+            child: Text('Hey you \nStanding in the dark'),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.yellowAccent,
+            child: Text('Hey you \nStanding in the dark'),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
