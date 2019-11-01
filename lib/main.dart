@@ -26,22 +26,43 @@ class Home extends StatelessWidget{
               Text('Ok Thats Done')
             ],
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyanAccent,
-            child: Center(
-                child:Text('Hey you \nStanding in the dark')),
 
-          ),
           Container(
             padding: EdgeInsets.all(20.0),
-            color: Colors.pinkAccent,
-            child: Text('Hey you \nStanding in the dark'),
+            /*color: Colors.cyanAccent,*/
+            decoration: new BoxDecoration(
+                color: Colors.green,
+                borderRadius: new BorderRadius.only(
+                  topLeft: const Radius.circular(20.0),
+                  topRight: const Radius.circular(20.0),
+                  bottomLeft: const Radius.circular(0.0),
+                  bottomRight: const Radius.circular(0.0)
+                )
+              ),
+              child: Center(
+                  child:Text('Hey you \tOut there in the cold\nGetting Lonely getting old\ncan you feel me')),
+            ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+
+            decoration: new BoxDecoration(
+                color: Colors.pinkAccent,
+                borderRadius: new BorderRadius.only(
+                    topLeft: const Radius.circular(20.0),
+                    topRight: const Radius.circular(20.0),
+                    bottomLeft: const Radius.circular(0.0),
+                    bottomRight: const Radius.circular(0.0)
+                )
+            ),
+            child: Text('Hey you \tStanding in the aisles\nWith itchy feet and fading smiles\ncan you feel me'),
           ),
           Container(
             padding: EdgeInsets.all(20.0),
             color: Colors.yellowAccent,
-            child: Text('Hey you \nStanding in the dark'),
+            child:Align(
+              alignment: Alignment.centerRight,
+              child: Text('Hey you \tdon\'t help them to burry the light\nDon\'t give in without a fight'),
+            ),
           ),
         ],
       ),
