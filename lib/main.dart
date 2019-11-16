@@ -9,15 +9,30 @@ class Home extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
+      /*appBar: AppBar(
         title: Text('RAGAdox'),
         centerTitle: true,
         backgroundColor: Colors.red[600],
-      ),
+      ),*/
       body:Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        //mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(10),
+            decoration: new BoxDecoration(
+              color: Colors.amberAccent,
+                borderRadius: new BorderRadius.only(
+                    topLeft: const Radius.circular(0.0),
+                    topRight: const Radius.circular(0.0),
+                    bottomLeft: const Radius.circular(0.0),
+                    bottomRight: const Radius.circular(20.0)
+                ),
+            ),
+            child: Center(
+                child:Text('Hii There lets revisit')),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
